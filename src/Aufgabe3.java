@@ -55,9 +55,7 @@ public class Aufgabe3 {
                          "-------------------");
         for(int i=0; i < verteilung.length; i++){
             System.out.print((von+i)+"V");
-            for(int j=1000000; j>1; j/=10){
-                if(i<j) System.out.print(" ");
-            }
+            for(int j=1000000; j>1; j/=10) if(i<j) System.out.print(" ");
             System.out.println("|      "+verteilung[i]+"x");
         }
     }

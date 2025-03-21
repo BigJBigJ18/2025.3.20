@@ -42,9 +42,7 @@ public class Aufgabe4 {
                 "-----------------------");
         for(int i=0; i < noten.length; i++){
             System.out.print("Note "+(von+i)+": ");
-            for(int j=1000000; j>1; j/=10){
-                if(i<j) System.out.print(" ");
-            }
+            for(int j=1000000; j>1; j/=10) if(i<j) System.out.print(" ");
             System.out.println("|      "+noten[i]+"x");
         }
 

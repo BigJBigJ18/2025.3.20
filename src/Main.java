@@ -10,6 +10,7 @@ public class Main {
         Main.aufgabe2();
         Main.aufgabe3(false);
         Main.aufgabe4(true);
+        Main.aufgabe5(true);
     }
 
     public static void aufgabe1(boolean manuell){
@@ -75,6 +76,20 @@ public class Main {
         System.out.println("Beste Note: "+aufgabe4.besteNote());
         System.out.println("Schlechteste Note: "+aufgabe4.schlechtesteNote());
         System.out.println("Mittelwert: "+aufgabe4.mittelwert());
+        System.out.println("---------------------------------------------------------------------");
+    }
+
+    public static void aufgabe5(boolean manuell){
+        Aufgabe5 aufgabe5;
+        if(manuell){
+            aufgabe5=new Aufgabe5(100);
+        }else{
+            aufgabe5=new Aufgabe5();
+        }
+
+
+        System.out.println("------------------------------Aufgabe 5------------------------------");
+        aufgabe5.ausgabe();
         System.out.println("---------------------------------------------------------------------");
     }
 }
