@@ -1,11 +1,17 @@
+import java.util.Scanner;
+
 public class Aufgabe1 {
+    private int[] input=new int[10];
+    int[] korrektur ={1, 2, 3, 4, 5, 6, 7, 8, 9, 10}; // Falls die Eingabe nicht valid ist, wird das verwendet
+
+
 
     /**
      * Konstruktor für die Instanziierung von Aufgabe1 mit dem Scanner. Der Input muss manuell über die Konsole erfolgen.
      * Keine Errornachrichten werden durch diesen Konstruktor ausgegeben.
      */
     public Aufgabe1(){
-
+        setInput(Aufgabe1.scannerAbfrage());
     }
 
     /**
@@ -21,6 +27,50 @@ public class Aufgabe1 {
      * Wenn limit != true, dann wird array direkt zugewiesen (nach Überprüfung auf null).
      */
     public Aufgabe1(int[] array, boolean limit){
+        if(array==null){
+            System.err.println("wrong.aufgabe1.<<aufgabe1>>.input.1");
+            throw new NullPointerException("Falsche Instanziierung");
+        }else if(limit && array.length != 10){
+            System.err.println("wrong.aufgabe1.<<aufgabe1>>.input.2");
+            setInput(korrektur);
+        }else{
+            setInput(array);
+        }
+    }
 
+    private void setInput(int[] input) {
+        if(input==null){
+            input=korrektur;
+            System.err.println("wrong.aufgabe1.setinput.input.1");
+        }
+        this.input=input;
+    }
+
+    /**
+     * Es ist die Scannerabfrage für den Konstruktor ohne Parameter. Gibt bei falschem Input im Scanner eine Errornachricht mit diesem Dateipfad aus:
+     * "wrong.aufgabe1.scannerabfrage.input.1".
+     * @return
+     * Gibt den eingegebenen Array durch den User über die Scanner zurück, um diesem weiterzuverwenden.
+     */
+    private static int[] scannerAbfrage(){
+        Scanner scan = new Scanner(System.in);
+        int[] safe= new int[10];    //Temporärer Speicher für den return
+
+
+        for(int i=0; i<10; i++){
+            System.out.print("Zahl "+(i+1)+": ");
+            while(scan.hasNext()){
+                if(scan.hasNextInt()){
+                    safe[i]=scan.nextInt();
+                    break;
+                }else{
+                    System.err.println("wrong.aufgabe1.scannerAbfrage.input.1");
+                    scan.next();
+                    System.out.print("\nZahl "+(i+1)+": ");
+                }
+            }
+        }
+
+        return safe;
     }
 }
