@@ -12,6 +12,7 @@ public class Main {
         Main.aufgabe4(true);
         Main.aufgabe5(true);
         Main.aufgabe6();
+        Main.aufgabe7();
     }
 
     public static void aufgabe1(boolean manuell){
@@ -96,10 +97,20 @@ public class Main {
 
     public static void aufgabe6(){
         Aufgabe6 aufgabe6=new Aufgabe6();
-        int[] index={-10, 10, 1, -1, 3, 435, 32, 14, 54, 365, 414, -3453, -56};
+        int[] index={1, 2, 3, 4, 5, 6, 7, 8, 9, 0, -1, -2, -3, -4, -5, -6, -7, -8, -9, };
 
         System.out.println("------------------------------Aufgabe 6------------------------------");
-        System.out.println("Index von -56 (12 erwartet): "+aufgabe6.searchIndex(index, -56));
+        System.out.println("Index von -0: "+aufgabe6.searchIndex(index, 0));
+        System.out.println("---------------------------------------------------------------------");
+    }
+
+    public static void aufgabe7(){
+        Aufgabe7 aufgabe7=new Aufgabe7();
+        int[] index={1, 2, 3, 4, 5, 6, 7, 8, 9, 0, -1, -2, -3, -4, -5, -6, -7, -8, -9, };
+
+        System.out.println("------------------------------Aufgabe 7------------------------------");
+        aufgabe7.ausgabe(index);
+        aufgabe7.ausgabe(aufgabe7.swap(index, 0, 1));
         System.out.println("---------------------------------------------------------------------");
     }
 }
