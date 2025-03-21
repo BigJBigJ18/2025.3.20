@@ -41,14 +41,14 @@ public class Aufgabe1 {
     private void setInput(int[] input) {
         if(input==null){
             input=korrektur;
-            System.err.println("wrong.aufgabe1.setinput.input.1");
+            System.err.println("wrong.aufgabe1.setInput.input.1");
         }
         this.input=input;
     }
 
     /**
      * Es ist die Scannerabfrage für den Konstruktor ohne Parameter. Gibt bei falschem Input im Scanner eine Errornachricht mit diesem Dateipfad aus:
-     * "wrong.aufgabe1.scannerabfrage.input.1".
+     * "wrong.aufgabe1.scannerAbfrage.input.1".
      * @return
      * Gibt den eingegebenen Array durch den User über die Scanner zurück, um diesem weiterzuverwenden.
      */
@@ -70,7 +70,34 @@ public class Aufgabe1 {
                 }
             }
         }
-
         return safe;
+    }
+
+    public int summe(){
+        int counter=0;
+        for(int i : input) counter+=i;
+        return counter;
+    }
+
+    public int minimum(){
+        int min=input[0];
+        for(int i : input) if(i<min) min=i;
+        return min;
+    }
+
+    public int maximum(){
+        int max=input[0];
+        for(int i : input) if(i>max) max=i;
+        return max;
+    }
+
+    public float mittelwert(){
+        return (float)summe()/input.length;
+    }
+
+    public int anzPos(){
+        int anz=0;
+        for(int i : input) if(i>0) anz++;
+        return anz;
     }
 }
