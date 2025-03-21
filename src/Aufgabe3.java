@@ -1,19 +1,17 @@
 import java.util.Random;
 
 public class Aufgabe3 {
-    int[] messwerte;
-    int[] verteilung;
+    private final int[] verteilung;
+    private int von;
 
     /**
      * Default-Konstruktor für Aufgabe 3.
      * Instanziiert mit von=0, bis=12, laenge=1000.
      */
     public Aufgabe3(){
-        messwerte=new int[1000];
         verteilung=new int[13];
         for(int i = 0; i<1000; i++){
-            messwerte[i]=new Random(System.currentTimeMillis()+new Random().nextInt()).nextInt(0, 13);
-            verteilung[messwerte[i]]++;
+            verteilung[new Random(System.currentTimeMillis()+new Random().nextInt()).nextInt(0, 13)]++;
         }
     }
 
@@ -45,11 +43,10 @@ public class Aufgabe3 {
             bis=tausch;
         }
 
-        messwerte=new int[laenge];
+        this.von=von;
         verteilung=new int[bis+1-von];
         for(int i = 0; i<laenge; i++){
-            messwerte[i]=new Random(System.currentTimeMillis()+new Random().nextInt()).nextInt(von, bis+1);
-            verteilung[messwerte[i]-von]++;
+            verteilung[new Random(System.currentTimeMillis()+new Random().nextInt()).nextInt(von-1, bis)]++;
         }
     }
 
@@ -57,7 +54,7 @@ public class Aufgabe3 {
         System.out.println("      Ausgabe\n" +
                          "-------------------");
         for(int i=0; i < verteilung.length; i++){
-            System.out.print(i+"V");
+            System.out.print((von+i)+"V");
             for(int j=1000000; j>1; j/=10){
                 if(i<j) System.out.print(" ");
             }
