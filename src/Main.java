@@ -13,6 +13,7 @@ public class Main {
         Main.aufgabe5(true);
         Main.aufgabe6();
         Main.aufgabe7();
+        Main.aufgabe8();
     }
 
     public static void aufgabe1(boolean manuell){
@@ -109,8 +110,16 @@ public class Main {
         int[] index={1, 2, 3, 4, 5, 6, 7, 8, 9, 0, -1, -2, -3, -4, -5, -6, -7, -8, -9, };
 
         System.out.println("------------------------------Aufgabe 7------------------------------");
+        System.out.print("altes Feld: ");
         aufgabe7.ausgabe(index);
+        System.out.println("Parameter 1: "+0);
+        System.out.println("Parameter 2: "+1);
+        System.out.print("neues Feld: ");
         aufgabe7.ausgabe(aufgabe7.swap(index, 0, 1));
         System.out.println("---------------------------------------------------------------------");
+    }
+
+    public static void aufgabe8(){
+
     }
 }

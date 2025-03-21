@@ -19,11 +19,15 @@ public class Aufgabe7 {
     }
 
     public void ausgabe(int [] array){
-        System.out.print("[");
-        for(int i=0; i<array.length; i++){
-            System.out.print(array[i]);
-            if(!(i+1>=array.length)) System.out.print(", ");
+        if(array==null){
+            System.err.println("wrong.aufgabe7.ausgabe.input.1");
+        }else{
+           System.out.print("[");
+           for(int i=0; i<array.length; i++){
+               System.out.print(array[i]);
+              if(!(i+1>=array.length)) System.out.print(", ");
+          }
+            System.out.println("]");
         }
-        System.out.println("]");
     }
 }
