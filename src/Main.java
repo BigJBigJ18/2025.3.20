@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Main.aufgabe1(false);
         Main.aufgabe2();
+        Main.aufgabe3(true);
     }
 
     public static void aufgabe1(boolean manuell){
@@ -41,6 +42,19 @@ public class Main {
         System.out.println("Prozent Genau: "+aufgabe2.proKorrekt());
         System.out.println("Prozent Unter: "+aufgabe2.proUnter());
         System.out.println("Prozent Über: "+aufgabe2.proUeber());
+        System.out.println("---------------------------------------------------------------------");
+    }
+
+    public static void aufgabe3(boolean manuell){
+        Aufgabe3 aufgabe3;
+        if(manuell){
+            aufgabe3=new Aufgabe3(10, 30, 10000);
+        }else{
+            aufgabe3=new Aufgabe3();
+        }
+        System.out.println("------------------------------Aufgabe 2------------------------------");
+        aufgabe3.ausgabe(); System.out.println();
+
         System.out.println("---------------------------------------------------------------------");
     }
 }
