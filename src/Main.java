@@ -3,7 +3,7 @@
 public class Main {
     public static void main(String[] args) {
         Main.aufgabe1(false);
-
+        Main.aufgabe2();
     }
 
     public static void aufgabe1(boolean manuell){
@@ -21,6 +21,24 @@ public class Main {
         System.out.println("Größte: "+aufgabe1.maximum());
         System.out.println("Mittelwert: "+aufgabe1.mittelwert());
         System.out.println("Anzahl positiv: "+aufgabe1.anzPos());
+        System.out.println("---------------------------------------------------------------------");
+    }
+
+    public static void aufgabe2(){
+        Aufgabe2 aufgabe2=new Aufgabe2(10);
+        System.out.println("------------------------------Aufgabe 2------------------------------");
+        System.out.println("Summe: "+aufgabe2.summe());
+        System.out.println("Kleinste: "+aufgabe2.minimum());
+        System.out.println("Größte: "+aufgabe2.maximum());
+        System.out.println("Mittelwert: "+aufgabe2.mittelwert());
+        System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+        System.out.println("Anzahl Genau: "+aufgabe2.anzKorrekt());
+        System.out.println("Anzahl Unter: "+aufgabe2.anzUnter());
+        System.out.println("Anzahl Über: "+aufgabe2.anzUeber());
+        System.out.println("∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨");
+        System.out.println("Prozent Genau: "+aufgabe2.proKorrekt());
+        System.out.println("Prozent Unter: "+aufgabe2.proUnter());
+        System.out.println("Prozent Über: "+aufgabe2.proUeber());
         System.out.println("---------------------------------------------------------------------");
     }
 }
