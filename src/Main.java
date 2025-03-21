@@ -27,6 +27,8 @@ public class Main {
     public static void aufgabe2(){
         Aufgabe2 aufgabe2=new Aufgabe2(10);
         System.out.println("------------------------------Aufgabe 2------------------------------");
+        System.out.print("Liste: "); aufgabe2.ausgabe(); System.out.println();
+        System.out.println("∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨");
         System.out.println("Summe: "+aufgabe2.summe());
         System.out.println("Kleinste: "+aufgabe2.minimum());
         System.out.println("Größte: "+aufgabe2.maximum());

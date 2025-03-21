@@ -82,4 +82,13 @@ public class Aufgabe2 {
         Aufgabe1 aufgabe1=new Aufgabe1(gummibaerchen, false);
         return aufgabe1.mittelwert();
     }
+
+    public void ausgabe(){
+        System.out.print("[");
+        for(int i=0; i<gummibaerchen.length; i++){
+            System.out.print(gummibaerchen[i]);
+            if(!(i+1>=gummibaerchen.length)) System.out.print(", ");
+        }
+        System.out.print("]");
+    }
 }
