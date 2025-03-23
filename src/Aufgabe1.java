@@ -38,6 +38,7 @@ public class Aufgabe1 {
         }
     }
 
+
     private void setInput(int[] input) {
         if(input==null){
             input=korrektur;

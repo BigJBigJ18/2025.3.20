@@ -1,13 +1,11 @@
 public class Aufgabe8 {
     public static int[] delElement(int[] a, int w){
-        if(a==null){
+        if(a==null) {
             System.err.println("wrong.aufgabe8.delElement.input.null");
             return null;
         }
 
-
         int entfernte =0;
-
         for(int i=0; i<a.length; i++){
             if(a[i]==w){
                 entfernte++;

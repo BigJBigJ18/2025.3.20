@@ -18,6 +18,7 @@ public class Aufgabe2 {
         for(int i=0; i<anzahl; i++) gummibaerchen[i]=new Random(System.currentTimeMillis()+new Random().nextInt()).nextInt(10, 15);
     }
 
+
     /**
      * Eine Methode, um die Häufigkeit richtiger Packungen zu finden.
      * @return

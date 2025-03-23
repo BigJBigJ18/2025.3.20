@@ -23,6 +23,7 @@ public class Aufgabe5 {
         instanziierung();
     }
 
+
     private void instanziierung(){
         for(int i=0; i<feld1.length; i++){
             feld1[i]=new Random(System.currentTimeMillis()+new Random().nextInt()).nextInt(-1000, 1000);

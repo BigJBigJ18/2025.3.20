@@ -4,7 +4,6 @@ public class Aufgabe7 {
             System.err.println("wrong.aufgabe7.swap.input.1");
             return null;
         }
-
         int pos1=Aufgabe6.searchIndex(a, i);
         int pos2=Aufgabe6.searchIndex(a, j);
         if(pos1<0||pos2<0){

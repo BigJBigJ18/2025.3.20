@@ -7,7 +7,6 @@ public class Aufgabe6 {
                 if(a[i]==value)
                     return i;
         }
-
         return -1;
     }
 }

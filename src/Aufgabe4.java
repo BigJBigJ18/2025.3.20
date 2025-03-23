@@ -27,7 +27,6 @@ public class Aufgabe4 {
             bis=15;
         }
 
-
         this.von=von;
         this.anzahl=anzahl;
         noten=new int[bis-von+1];
@@ -36,6 +35,7 @@ public class Aufgabe4 {
             noten[new Random(System.currentTimeMillis()+new Random().nextInt()).nextInt(von-1, bis)]++;
         }
     }
+
 
     public void ausgabe(){
         System.out.println("         Ausgabe\n" +

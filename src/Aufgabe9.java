@@ -4,7 +4,6 @@ public class Aufgabe9 {
             System.err.println("wrong.aufgabe9.sumUpInt.input.1");
             return null;
         }
-
         int counter=0;
         int[] fix=new int[a.length];
         for(int i=0; i< a.length; i++){

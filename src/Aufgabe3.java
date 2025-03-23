@@ -50,6 +50,7 @@ public class Aufgabe3 {
         }
     }
 
+
     public void ausgabe(){
         System.out.println("      Ausgabe\n" +
                          "-------------------");
