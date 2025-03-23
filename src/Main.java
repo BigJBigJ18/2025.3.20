@@ -10,10 +10,11 @@ public class Main {
         Main.aufgabe2();
         Main.aufgabe3(false);
         Main.aufgabe4(true);
-        Main.aufgabe5(true);
+        Main.aufgabe5(false);
         Main.aufgabe6();
         Main.aufgabe7();
         Main.aufgabe8();
+        Main.aufgabe9();
     }
 
     public static void aufgabe1(boolean manuell){
@@ -26,6 +27,8 @@ public class Main {
             aufgabe1 = new Aufgabe1(zahlen, true);
         }
         System.out.println("------------------------------Aufgabe 1------------------------------");
+        System.out.print("Liste: "); Aufgabe7.ausgabe(zahlen);
+        System.out.println("∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨∨");
         System.out.println("Summe: "+aufgabe1.summe());
         System.out.println("Kleinste: "+aufgabe1.minimum());
         System.out.println("Größte: "+aufgabe1.maximum());
@@ -123,10 +126,20 @@ public class Main {
         System.out.println("------------------------------Aufgabe 8------------------------------");
         System.out.print("altes Feld: ");
         Aufgabe7.ausgabe(index);
-        System.out.println("Parameter 1: "+0);
-        System.out.println("Parameter 2: "+1);
+        System.out.println("Parameter: "+1);
         System.out.print("neues Feld: ");
         Aufgabe7.ausgabe(Aufgabe8.delElement(index, 1));
+        System.out.println("---------------------------------------------------------------------");
+    }
+
+    public static void aufgabe9(){
+        int[] index={3, 4, 1, 9, -5, 4};
+
+        System.out.println("------------------------------Aufgabe 9------------------------------");
+        System.out.print("altes Feld: ");
+        Aufgabe7.ausgabe(index);
+        System.out.print("neues Feld: ");
+        Aufgabe7.ausgabe(Aufgabe9.sumUpInt(index));
         System.out.println("---------------------------------------------------------------------");
     }
 }
