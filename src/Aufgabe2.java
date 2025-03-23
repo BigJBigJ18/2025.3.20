@@ -63,8 +63,8 @@ public class Aufgabe2 {
      * @return
      * Gibt alle Gummibärchen aus allen Packungen zusammen als Integer-Wert zurück.
      */
-    public int summe(){
-        Aufgabe1 aufgabe1=new Aufgabe1(gummibaerchen, false);
+    public int summe() {
+        Aufgabe1 aufgabe1 = new Aufgabe1(gummibaerchen, false);
         return aufgabe1.summe();
     }
 
