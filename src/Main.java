@@ -97,29 +97,36 @@ public class Main {
     }
 
     public static void aufgabe6(){
-        Aufgabe6 aufgabe6=new Aufgabe6();
         int[] index={1, 2, 3, 4, 5, 6, 7, 8, 9, 0, -1, -2, -3, -4, -5, -6, -7, -8, -9, };
 
         System.out.println("------------------------------Aufgabe 6------------------------------");
-        System.out.println("Index von -0: "+aufgabe6.searchIndex(index, 0));
+        System.out.println("Index von -0: "+Aufgabe6.searchIndex(index, 0));
         System.out.println("---------------------------------------------------------------------");
     }
 
     public static void aufgabe7(){
-        Aufgabe7 aufgabe7=new Aufgabe7();
         int[] index={1, 2, 3, 4, 5, 6, 7, 8, 9, 0, -1, -2, -3, -4, -5, -6, -7, -8, -9, };
 
         System.out.println("------------------------------Aufgabe 7------------------------------");
         System.out.print("altes Feld: ");
-        aufgabe7.ausgabe(index);
+        Aufgabe7.ausgabe(index);
         System.out.println("Parameter 1: "+0);
         System.out.println("Parameter 2: "+1);
         System.out.print("neues Feld: ");
-        aufgabe7.ausgabe(aufgabe7.swap(index, 0, 1));
+        Aufgabe7.ausgabe(Aufgabe7.swap(index, 0, 1));
         System.out.println("---------------------------------------------------------------------");
     }
 
     public static void aufgabe8(){
+        int[] index={1,0,0,0,1,0};
 
+        System.out.println("------------------------------Aufgabe 8------------------------------");
+        System.out.print("altes Feld: ");
+        Aufgabe7.ausgabe(index);
+        System.out.println("Parameter 1: "+0);
+        System.out.println("Parameter 2: "+1);
+        System.out.print("neues Feld: ");
+        Aufgabe7.ausgabe(Aufgabe8.delElement(index, 1));
+        System.out.println("---------------------------------------------------------------------");
     }
 }

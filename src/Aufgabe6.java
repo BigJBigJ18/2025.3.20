@@ -1,5 +1,5 @@
 public class Aufgabe6 {
-    public int searchIndex(int[] a, int value){
+    public static int searchIndex(int[] a, int value){
         if(a==null){
             System.err.println("wrong.aufgabe6.searchIndex.input.1");
         }else{
